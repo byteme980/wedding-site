@@ -1,0 +1,24 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-caption {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.wedding {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}

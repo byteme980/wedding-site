@@ -1,0 +1,59 @@
+nav {
+  background: white;
+  color: darkgray;
+  font-family: "Courier", Helvetica, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 4em;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  font-size: 2em;
+  margin: 5px 0;
+}
+
+nav a {
+  color: darkgray;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover, nav a.active {
+  color: black;
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+
+footer {
+  background: darkgray;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

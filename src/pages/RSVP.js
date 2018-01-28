@@ -3,8 +3,8 @@ import rock from '../images/gallery/rock.jpg';
 
 const encode = (data) => {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 }
 
 const setRSVP = (info) => {
@@ -80,14 +80,14 @@ class RSVP extends Component {
             </div>
             <div className="twelve columns">
               <label htmlFor="email">Email Address</label>
-              <input type="email" id="email" name="email"  value={email} onChange={this.handleChange} />
+              <input type="email" id="email" name="email" className="u-full-width" value={email} onChange={this.handleChange} />
             </div>
           </div>
           <div className="row">
             <div className="six columns">
               <label htmlFor="attendance">Will you attend?</label>
-              <select className="u-full-width" value={attendance} id="attendance" onChange={this.handleChange}>
-                <option value="yes">Yes, with pleasure!</option>
+              <select name="attendance" className="u-full-width" value={attendance} id="attendance" onChange={this.handleChange}>
+                <option value="yes" defaultValue>Yes, with pleasure!</option>
                 <option value="no">Regretfully, no</option>
               </select>
             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import rock from '../images/gallery/rock.jpg';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -29,8 +30,8 @@ class RSVP extends Component {
         this.setState({
           name: '',
           email: '',
-          party: '',
           comments: '',
+          attendance: '',
         });
       })
       .catch(error => alert(error));
@@ -38,30 +39,44 @@ class RSVP extends Component {
     e.preventDefault();
   };
   render() {
-    const { name, email, party, comments } = this.state;
+    const { name, email, comments, attendance } = this.state;
     return (
-      <div>
-        <h1>RSVP</h1>
-        <p>Please RSVP no later than August 20</p>
-        <form onSubmit={this.handleSubmit}>
+      <div className="container">
+        <img src={rock} alt="Kim and Phil on a rock in Mexico City" width="100%" height="auto" />
+        <p>
+          We'll be sending out formal invitations as well. If you already know whether you can make it, it'd rock if you could RSVP here so we can get a rough headcount.
+        </p>
+        <p>
+          Please RSVP once for each guest invited.
+        </p>
+        <form className="rsvp-form" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="rsvp" />
-          <label>
-            Name
-            <input type="text" name="name" value={name} onChange={this.handleChange} />
-          </label>
-          <label>
-            Email Address
-            <input type="email" name="email"  value={email} onChange={this.handleChange} />
-          </label>
-          <label>
-            Number in party
-            <input type="number" name="party" value={party}  onChange={this.handleChange} />
-          </label>
-          <label>
-            Anything you'd like us to know, or any questions you have?
-            <textarea name="comments" value={comments} onChange={this.handleChange}>
-            </textarea>
-          </label>
+          <div className="row">
+            <div className="twelve columns">
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" className="u-full-width" value={name} onChange={this.handleChange} />
+            </div>
+            <div className="twelve columns">
+              <label htmlFor="email">Email Address</label>
+              <input type="email" id="email" name="email"  value={email} onChange={this.handleChange} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="six columns">
+              <label htmlFor="attendance">Will you attend?</label>
+              <select className="u-full-width" value={attendance} id="attendance" onChange={this.handleChange}>
+                <option value="yes">Yes, with pleasure!</option>
+                <option value="no">Regretfully, no</option>
+              </select>
+            </div>
+          </div>
+          <div classNam="row">
+            <div className="twelve columns">
+              <label htmlFor="comments">Anything you'd like us to know, or any questions you have?</label>
+              <textarea className="u-full-width" name="comments" value={comments} onChange={this.handleChange}>
+              </textarea>
+            </div>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>

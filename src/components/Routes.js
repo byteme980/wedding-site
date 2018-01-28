@@ -9,7 +9,7 @@ import Wedding from '../pages/Wedding';
 
 const Routes = (props) => {
   return (
-    <main>
+    <main className="container">
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/rsvp' component={RSVP} />

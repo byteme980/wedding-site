@@ -1,5 +1,67 @@
-body {
+/* footer styles */
+footer {
+  height: 4rem;
+  background: #484848;
+  text-align: center;
+}
+
+footer a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* navbar styles */
+nav {
+  background: #fff;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica', sans-serif;
+}
+
+nav li {
+  list-style: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: darkgray;
+}
+nav a:hover, nav a.active {
+  color: #000;
+}
+
+/* make the container wider for mobile devices */
+@media (max-width: 400px){
+  .container {
+    width: 96%;
+    margin: 2%;
+  }
+}
+
+/* make the navbar fixed for larger than phablet screens*/
+@media (min-width: 550px) {
+  nav {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    padding-top: 1rem;
+    height: 4rem;
+  }
+  .container {
+    margin-top: 6rem;
+  }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

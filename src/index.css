@@ -40,6 +40,10 @@ nav a:hover, nav a.active {
   color: #000;
 }
 
+.rsvp-success {
+  color: #14b114;
+}
+
 /* make the container wider for mobile devices */
 @media (max-width: 400px){
   .container {

@@ -26,7 +26,7 @@ const getRSVP = () => {
 class RSVP extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: '', email: '', attendance: '', comments:  '', hasRSVPd: getRSVP()};
+    this.state = { name: '', email: '', attendance: 'yes', comments:  '', hasRSVPd: getRSVP()};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -49,7 +49,7 @@ class RSVP extends Component {
           name: '',
           email: '',
           comments: '',
-          attendance: '',
+          attendance: 'yes',
         });
 
       })

@@ -4,7 +4,6 @@ import mountDiablo from '../images/gallery/mountDiablo.jpg';
 import mexico from '../images/gallery/mexico.jpg';
 import trilium from '../images/gallery/trilium.jpg';
 import solarEclipse from '../images/gallery/solarEclipse.jpg';
-import kayak from '../images/gallery/kayak.jpg';
 import saveTheDate from '../images/saveTheDate.jpg';
 import ring from '../images/gallery/ring.jpg';
 import skiing from '../images/gallery/skiing.jpg';

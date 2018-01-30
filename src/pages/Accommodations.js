@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Courtyard from '../images/CourtyardMarriott.jpg';
-import wishlist from '../images/wishList.png';
+import courtyard from '../images/CourtyardMarriott.jpg';
+import wishlist from '../images/wishList.jpg';
 
 class Accommodations extends Component {
   render() {
@@ -17,7 +17,7 @@ class Accommodations extends Component {
           There are a surprising number of hotels where you can rest your head.
           There's the Marriott, Doubletree Hilton, etc. We'll keep this area updated once we've set up a hotel block.
         </p>
-        <img alt="Courtyard Marriott" src={Courtyard} width="100%" height="auto"/>
+        <div className="image-container" style={{backgroundImage: `url(${courtyard})`}} />
         <h2>Airbnbs</h2>
         <p>
           If hotels are not your thing, there are also plenty of unique Airbnbs in the area.
@@ -27,10 +27,9 @@ class Accommodations extends Component {
             target="_blank"
           >
             wishlist
-          </a> of places to stay near the wedding. 
-
-          <img alt="airbnb wishlist" src={wishlist} width="100%" height="auto" />
+          </a> of places to stay near the wedding.
         </p>
+        <div className="image-container" style={{backgroundImage: `url(${wishlist})`}} />
       </div>
     );
   }

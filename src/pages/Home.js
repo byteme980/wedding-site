@@ -5,7 +5,7 @@ import mexico from '../images/gallery/mexico.jpg';
 import trilium from '../images/gallery/trilium.jpg';
 import solarEclipse from '../images/gallery/solarEclipse.jpg';
 import kayak from '../images/gallery/kayak.jpg';
-import saveTheDate from '../images/saveTheDate.png';
+import saveTheDate from '../images/saveTheDate.jpg';
 import ring from '../images/gallery/ring.jpg';
 import skiing from '../images/gallery/skiing.jpg';
 import portlandDinner from '../images/gallery/portlandDinner.jpg';
@@ -24,9 +24,7 @@ class Home extends Component {
     ]
     return (
       <div className="container">
-        <div>
-          <img height="auto" width="100%" alt="Kim and Phil in SF" src={saveTheDate}/>
-        </div>
+        <div className="image-container" style={{backgroundImage: `url(${saveTheDate})`}} />
         <section>
           <h2>Our Story</h2>
           <p>

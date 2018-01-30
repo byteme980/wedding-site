@@ -7,7 +7,7 @@ class Wedding extends Component {
     return (
       <div className="container">
         <h1 className="photo-caption center">The Wedding</h1>
-        <img alt="Tappan Hill Mansion" src={tappanHill} width="100%" height="auto"/>
+        <div className="image-container" style={{backgroundImage: `url(${tappanHill})`}} />
         <section>
           <h2>Tappan Hill Mansion</h2>
           <p>200 Gundpowder Lane. Tarrytown, NY</p>

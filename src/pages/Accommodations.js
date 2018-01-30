@@ -9,13 +9,11 @@ class Accommodations extends Component {
         <h1>Accommodations</h1>
         <h2>Getting there</h2>
         <p>
-          If you're coming from out of town, we recommend flying into John F. Kennedy International Airport (JFK).
-          Laguardia (LGA) and Newark (NWK) are also nearby. We recommend flying in on Friday and leaving sometime on Sunday to get the most out of your visit!
+          If you're coming from out of town, we recommend flying into John F. Kennedy International Airport (JFK), but Laguardia (LGA) and Newark (NWK) are also nearby. We recommend flying in on Friday and leaving sometime on Sunday to get the most out of your visit!
         </p>
         <h2>Hotels</h2>
         <p>
-          There are a surprising number of hotels where you can rest your head.
-          There's the Marriott, Doubletree Hilton, etc. We'll keep this area updated once we've set up a hotel block.
+          There are plenty of great hotels in the area where you can rest your head. We also plan to set up a hotel block once we have a better sense of the number of out-of-town guests. Please make sure to RSVP and be sure to indicate if you are interested in having a room as part of the block.
         </p>
         <div className="image-container" style={{backgroundImage: `url(${courtyard})`}} />
         <h2>Airbnbs</h2>

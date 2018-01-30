@@ -35,12 +35,11 @@ class Home extends Component {
         <section>
           <h2>Our Story</h2>
           <p>
-            We met at Dartmouth College in the fall of 2013. It started with an email, and the rest is history...
-            Fast forward 4ish years, and we're in San Francisco working as software engineers.
-            In August 2017, we took a road trip to see the total solar eclipse in Madras, Oregon.
-            When the sun had entered what is known as the "diamond ring effect," Phil proposed!
-            Before he could finish asking, Kim said yes! We're ready to officially tie the knot and hope you will be able to join us!
-            We'll be getting married in Tarrytown, NY.
+            We met as juniors at Dartmouth College in the fall of 2013 and have been together ever since.
+            Today, we live in San Francisco and work as software engineers.
+            In August of last year, we embarked on a summer road trip to see the total solar eclipse in Madras, Oregon.
+            When the sun, moon and Earth were aligned, Phil proposed. Before he could finish asking, Kim said yes! We're ready to officially tie the knot and hope you will be able to join us!
+            We'll be getting married in Tarrytown, NY, on the 22nd of September in 2018.
           </p>
         </section>
         <section>

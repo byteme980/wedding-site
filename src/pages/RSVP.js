@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import rock from '../images/gallery/rock.jpg';
+import rock from '../images/rock.jpg';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -61,6 +61,7 @@ class RSVP extends Component {
     const { name, email, comments, attendance, hasRSVPd } = this.state;
     return (
       <div className="container">
+        <h1>Celebrate with us!</h1>
         <div className="image-container" style={{backgroundImage: `url(${rock})`}} />
         <p>
           We'll be sending out formal invitations as well. If you already know whether you can make it, it'd rock if you could RSVP here so we can get a rough headcount.

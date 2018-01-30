@@ -8,22 +8,30 @@ import kayak from '../images/gallery/kayak.jpg';
 import saveTheDate from '../images/saveTheDate.jpg';
 import ring from '../images/gallery/ring.jpg';
 import skiing from '../images/gallery/skiing.jpg';
-import portlandDinner from '../images/gallery/portlandDinner.jpg';
+import goldenGate from '../images/gallery/goldenGate.jpg';
+import loversLane from '../images/gallery/loversLane.jpg';
+import mtHood from '../images/gallery/mtHood.jpg';
+import palace from '../images/gallery/palace.jpg';
+import walkingInTheWoods from '../images/gallery/walkingInTheWoods.jpg';
 
 class Home extends Component {
   render() {
     const galleryImages = [
+      goldenGate,
       ring,
-      solarEclipse,
+      loversLane,
+      mtHood,
+      palace,
       mountDiablo,
-      kayak,
+      walkingInTheWoods,
       trilium,
       mexico,
-      portlandDinner,
+      solarEclipse,
       skiing,
     ]
     return (
       <div className="container">
+        <h1>Kim & Phil</h1>
         <div className="image-container" style={{backgroundImage: `url(${saveTheDate})`}} />
         <section>
           <h2>Our Story</h2>
@@ -39,10 +47,6 @@ class Home extends Component {
         <section>
           <h2>Photos</h2>
           <Gallery images={galleryImages} />
-          {/*<PhotoRow imageOne={ring} imageTwo={solarEclipse} />
-          <PhotoRow imageOne={mountDiablo} imageTwo={kayak} />
-          <PhotoRow imageOne={trilium} imageTwo={mexico} />
-          <PhotoRow imageOne={portlandDinner} imageTwo={skiing} />*/}
         </section>
       </div>
     );

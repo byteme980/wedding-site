@@ -63,7 +63,7 @@ class RSVP extends Component {
       <div className="container">
         <div className="image-container" style={{backgroundImage: `url(${rock})`}} />
         <p>
-          We will be sending out formal invitations when the date is a little closer, but if you already know that you'll be able to make it, it'd rock if you could RSVP here so we can get a rough headcount.
+          We will be sending out formal invitations when the date is a little closer. If you already know whether you'll be able to make it, it'd rock if you could RSVP here so we can get a rough headcount.
         </p>
         <p>
           Please RSVP for each guest invited.

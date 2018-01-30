@@ -30,9 +30,9 @@ class Home extends Component {
           <p>
             We met as juniors at Dartmouth College in the fall of 2013 and have been together ever since.
             Today, we live in San Francisco and work as software engineers.
-            In August of last year, we embarked on summer a road trip to see the total solar eclipse in Madras, Oregon.
-            When the sun, moon and Earth were in perfect alignment Phil proposed. Before he could finish asking, Kim said yes! We're ready to officially tie the knot and hope you will be able to join us!
-            We'll be getting married in Tarrytown, NY, on September 22nd of 2018.
+            In August of last year, we embarked on a summer road trip to see the total solar eclipse in Madras, Oregon.
+            When the sun, moon and Earth were aligned, Phil proposed. Before he could finish asking, Kim said yes! We're ready to officially tie the knot and hope you will be able to join us!
+            We'll be getting married in Tarrytown, NY, on the 22nd of September in 2018.
           </p>
         </section>
         <section>

@@ -13,7 +13,7 @@ class Accommodations extends Component {
         </p>
         <h2>Hotels</h2>
         <p>
-          There are plenty of great hotels in the area where you can rest your head. We also plan to set up a hotel block once we have a better sense of the number of the number of out of town guests. Please make sure to RSVP and be sure to indicate if you are interested in having a room as part of the block.
+          There are plenty of great hotels in the area where you can rest your head. We also plan to set up a hotel block once we have a better sense of the number of out-of-town guests. Please make sure to RSVP and be sure to indicate if you are interested in having a room as part of the block.
         </p>
         <div className="image-container" style={{backgroundImage: `url(${courtyard})`}} />
         <h2>Airbnbs</h2>

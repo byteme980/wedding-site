@@ -7,7 +7,7 @@ class Registry extends Component {
     return (
       <div className="container">
         <h1>We are working on it!</h1>
-        {'<3,'}
+        {'<3'}
         <div className="image-container" style={{backgroundImage: `url(${sandy})`}} />
       </div>
     );

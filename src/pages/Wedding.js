@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import tappanHill from '../images/TappanHill.jpg';
+import withScrollToTop from '../components/withScrollToTop';
 
 class Wedding extends Component {
   render() {
@@ -34,4 +35,4 @@ class Wedding extends Component {
   }
 }
 
-export default Wedding;
+export default withScrollToTop(Wedding);

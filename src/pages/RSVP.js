@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import rock from '../images/rock.jpg';
+import withScrollToTop from '../components/withScrollToTop';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -107,4 +108,4 @@ class RSVP extends Component {
   }
 }
 
-export default RSVP;
+export default withScrollToTop(RSVP);

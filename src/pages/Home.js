@@ -12,6 +12,7 @@ import loversLane from '../images/gallery/loversLane.jpg';
 import mtHood from '../images/gallery/mtHood.jpg';
 import palace from '../images/gallery/palace.jpg';
 import walkingInTheWoods from '../images/gallery/walkingInTheWoods.jpg';
+import withScrollToTop from '../components/withScrollToTop';
 
 class Home extends Component {
   render() {
@@ -51,4 +52,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default withScrollToTop(Home);

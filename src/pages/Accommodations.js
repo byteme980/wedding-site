@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import courtyard from '../images/CourtyardMarriott.jpg';
 import wishlist from '../images/wishList.jpg';
+import withScrollToTop from '../components/withScrollToTop';
 
 class Accommodations extends Component {
   render() {
@@ -33,4 +34,4 @@ class Accommodations extends Component {
   }
 }
 
-export default Accommodations;
+export default withScrollToTop(Accommodations);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import sandy from '../images/gallery/sandy.jpg'
+import withScrollToTop from '../components/withScrollToTop';
 
 class Registry extends Component {
   render() {
@@ -14,4 +15,4 @@ class Registry extends Component {
   }
 }
 
-export default Registry;
+export default withScrollToTop(Registry);

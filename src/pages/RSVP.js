@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import rock from '../images/gallery/rock.jpg';
+import rock from '../images/rock.jpg';
+import withScrollToTop from '../components/withScrollToTop';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -26,7 +27,7 @@ const getRSVP = () => {
 class RSVP extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: '', email: '', attendance: '', comments:  '', hasRSVPd: getRSVP()};
+    this.state = { name: '', email: '', attendance: 'yes', comments:  '', hasRSVPd: getRSVP()};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -49,7 +50,7 @@ class RSVP extends Component {
           name: '',
           email: '',
           comments: '',
-          attendance: '',
+          attendance: 'yes',
         });
 
       })
@@ -61,9 +62,10 @@ class RSVP extends Component {
     const { name, email, comments, attendance, hasRSVPd } = this.state;
     return (
       <div className="container">
-        <img src={rock} alt="Kim and Phil on a rock in Mexico City" width="100%" height="auto" />
+        <h1>Celebrate with us!</h1>
+        <div className="image-container" style={{backgroundImage: `url(${rock})`}} />
         <p>
-          We'll be sending out formal invitations as well. If you already know whether you can make it, it'd rock if you could RSVP here so we can get a rough headcount.
+          We will be sending out formal invitations when the date is a little closer. If you already know whether you'll be able to make it, it'd rock if you could RSVP here so we can get a rough headcount.
         </p>
         <p>
           Please RSVP for each guest invited.
@@ -106,4 +108,4 @@ class RSVP extends Component {
   }
 }
 
-export default RSVP;
+export default withScrollToTop(RSVP);

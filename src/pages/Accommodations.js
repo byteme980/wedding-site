@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Courtyard from '../images/CourtyardMarriott.jpg';
-import wishlist from '../images/wishList.png';
+import courtyard from '../images/CourtyardMarriott.jpg';
+import wishlist from '../images/wishList.jpg';
+import withScrollToTop from '../components/withScrollToTop';
 
 class Accommodations extends Component {
   render() {
@@ -9,15 +10,13 @@ class Accommodations extends Component {
         <h1>Accommodations</h1>
         <h2>Getting there</h2>
         <p>
-          If you're coming from out of town, we recommend flying into John F. Kennedy International Airport (JFK).
-          Laguardia (LGA) and Newark (NWK) are also nearby. We recommend flying in on Friday and leaving sometime on Sunday to get the most out of your visit!
+          If you're coming from out of town, we recommend flying into John F. Kennedy International Airport (JFK), but Laguardia (LGA), Newark (NWK), and Westchester County Airport (HPN) are also nearby. We recommend flying in on Friday and leaving sometime on Sunday to get the most out of your visit!
         </p>
         <h2>Hotels</h2>
         <p>
-          There are a surprising number of hotels where you can rest your head.
-          There's the Marriott, Doubletree Hilton, etc. We'll keep this area updated once we've set up a hotel block.
+          There are plenty of great hotels in the area where you can rest your head such as the Doubletree, Courtyard, or SpringHill. We also plan to set up a hotel block once we have a better sense of the number of out-of-town guests. Please make sure to RSVP and be sure to indicate if you are interested in having a room as part of the block.
         </p>
-        <img alt="Courtyard Marriott" src={Courtyard} width="100%" height="auto"/>
+        <div className="image-container" style={{backgroundImage: `url(${courtyard})`}} />
         <h2>Airbnbs</h2>
         <p>
           If hotels are not your thing, there are also plenty of unique Airbnbs in the area.
@@ -27,13 +26,12 @@ class Accommodations extends Component {
             target="_blank"
           >
             wishlist
-          </a> of places to stay near the wedding. 
-
-          <img alt="airbnb wishlist" src={wishlist} width="100%" height="auto" />
+          </a> of places to stay near the wedding.
         </p>
+        <div className="image-container" style={{backgroundImage: `url(${wishlist})`}} />
       </div>
     );
   }
 }
 
-export default Accommodations;
+export default withScrollToTop(Accommodations);

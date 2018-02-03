@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import sandy from '../images/gallery/sandy.jpg'
+import withScrollToTop from '../components/withScrollToTop';
+
 class Registry extends Component {
   render() {
+    console.log(sandy)
     return (
       <div className="container">
-        <div style={{height: '88vh'}}>
-        <h1>We're working on it!</h1>
-        {'<3,'}
-        <img alt="kim and phil" src={sandy} width="100%" height="auto" />
-        </div>
+        <h1>We are working on it!</h1>
+        {'<3'}
+        <div className="image-container" style={{backgroundImage: `url(${sandy})`}} />
       </div>
     );
   }
 }
 
-export default Registry;
+export default withScrollToTop(Registry);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Gallery from '../components/Gallery';
+import kimAndPhil from '../images/kimAndPhil.jpg';
 import mountDiablo from '../images/gallery/mountDiablo.jpg';
 import mexico from '../images/gallery/mexico.jpg';
 import trilium from '../images/gallery/trilium.jpg';
@@ -25,7 +26,8 @@ class Home extends Component {
     return (
       <div className="container">
         <div>
-          <img height="auto" width="100%" alt="Kim and Phil in SF" src={saveTheDate}/>
+          <h1>Kim & Phil — 9.22.2018</h1>
+          <img height="auto" width="100%" alt="Kim and Phil in SF" src={kimAndPhil}/>
         </div>
         <section>
           <h2>Our Story</h2>
@@ -41,10 +43,6 @@ class Home extends Component {
         <section>
           <h2>Photos</h2>
           <Gallery images={galleryImages} />
-          {/*<PhotoRow imageOne={ring} imageTwo={solarEclipse} />
-          <PhotoRow imageOne={mountDiablo} imageTwo={kayak} />
-          <PhotoRow imageOne={trilium} imageTwo={mexico} />
-          <PhotoRow imageOne={portlandDinner} imageTwo={skiing} />*/}
         </section>
       </div>
     );

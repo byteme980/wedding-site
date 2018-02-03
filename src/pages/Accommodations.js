@@ -14,7 +14,7 @@ class Accommodations extends Component {
         </p>
         <h2>Hotels</h2>
         <p>
-          There are plenty of great hotels in the area where you can rest your head such as the Doubletree, Courtyard, or SpringHill. We also plan to set up a hotel block once we have a better sense of the number of out-of-town guests. Please make sure to RSVP and be sure to indicate if you are interested in having a room as part of the block.
+          There are plenty of great hotels in the area where you can rest your head such as the <a href="http://doubletree3.hilton.com/en/hotels/new-york/doubletree-by-hilton-hotel-tarrytown-TERHIDT/index.html">Hilton DoubleTree</a>, <a href="http://www.marriott.com/hotels/travel/hpngr-courtyard-tarrytown-westchester-county/">Marriott Courtyard</a>, and the <a href="https://castlehotelandspa.com/">Castle Hotel & Spa</a>. We also plan to set up a hotel block once we have a better sense of the number of out-of-town guests. Please make sure to RSVP and be sure to indicate if you are interested in having a room as part of the block.
         </p>
         <div className="image-container" style={{backgroundImage: `url(${courtyard})`}} />
         <h2>Airbnbs</h2>

@@ -17,10 +17,10 @@ import withScrollToTop from '../components/withScrollToTop';
 class Home extends Component {
   render() {
     const galleryImages = [
-      goldenGate,
       ring,
-      loversLane,
+      goldenGate,
       mtHood,
+      loversLane,
       palace,
       mountDiablo,
       walkingInTheWoods,

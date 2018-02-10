@@ -94,9 +94,6 @@ class RSVP extends Component {
         <p>
           We will be sending out formal invitations when the date is a little closer. If you already know whether you'll be able to make it, it'd rock if you could RSVP here so we can get a rough headcount.
         </p>
-        <p>
-          Please RSVP for each guest invited.
-        </p>
         { hasRSVPd && (
           <p className='rsvp-success'>Thank you for RSVPing. Please use this form again if you'd like to update your response.</p>
         )}
@@ -104,7 +101,7 @@ class RSVP extends Component {
           <input type="hidden" name="form-name" value="rsvp" />
           <div className="row">
             <div className="twelve columns">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name(s)</label>
               <input required type="text" id="name" name="name" className="u-full-width" value={name} onChange={this.handleChange} />
             </div>
             <div className="twelve columns">

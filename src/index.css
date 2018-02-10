@@ -113,16 +113,10 @@ button:focus, button:active, button:hover {
   border: 1px solid #33C3F0
 }
 
-.button-primary:focus, .button-primary:hover, .button-primary:active {
-
-}
-
 /* make the container wider for mobile devices, make modal a modal sheet */
 @media (max-width: 400px){
   .container {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 100%;
   }
   .modal-content {
     width: 100%;
@@ -130,6 +124,11 @@ button:focus, button:active, button:hover {
     margin: 0;
     box-sizing: border-box;
     border-radius: 0;
+  }
+  nav {
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
   }
 }
 

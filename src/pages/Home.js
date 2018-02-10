@@ -32,7 +32,8 @@ class Home extends Component {
     return (
       <div className="container">
         <div>
-          <h1>Kim & Phil — 9.22.2018</h1>
+          <h1 className="main-heading">Kim & Phil</h1>
+          <div className="main-subheading">September 22, 2018</div>
           <div className="image-container" style={{backgroundImage: `url(${kimAndPhil})`}} />
         </div>
         <section>

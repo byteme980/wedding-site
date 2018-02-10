@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import rock from '../images/rock.jpg';
 import withScrollToTop from '../components/withScrollToTop';
+import Modal from '../components/Modal';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -27,9 +28,24 @@ const getRSVP = () => {
 class RSVP extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: '', email: '', attendance: 'yes', comments:  '', hasRSVPd: getRSVP()};
+    this.state = {
+      name: '',
+      email: '',
+      attendance: 'yes',
+      comments:  '',
+      hasRSVPd: getRSVP(),
+      modalVisible: false,
+      modalMessage: '',
+    };
+
+    this.onModalClose = this.onModalClose.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  onModalClose() {
+    this.setState({
+      modalVisible: false
+    });
   }
   handleChange(e) {
     this.setState({
@@ -37,7 +53,7 @@ class RSVP extends Component {
     });
   }
   handleSubmit(e) {
-    const {name, email, attendance, comments } = this.state;
+    const { name, email, attendance, comments } = this.state;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -45,8 +61,9 @@ class RSVP extends Component {
     })
       .then(() => {
         setRSVP({name, email, attendance, comments});
-        alert("Thanks for letting us know! Use this form again or email us if anything changes.");
+        this.setModalMessage();
         this.setState({
+          modalVisible: true,
           name: '',
           email: '',
           comments: '',
@@ -54,16 +71,26 @@ class RSVP extends Component {
         });
 
       })
-      .catch(error => alert(error));
+      .catch(error => alert("There was an error submitting your response. Please try again later!"));
 
     e.preventDefault();
-  };
+  }
+  setModalMessage() {
+    const defaultEnding = 'Please use this form again or email us if anything changes.';
+    const modalMessage =  this.state.attendance === 'yes' ?
+      `Looking forward to celebrating with you! ${defaultEnding}`
+      : `We'll miss you! ${defaultEnding}`;
+    this.setState({modalMessage});
+  }
   render() {
     const { name, email, comments, attendance, hasRSVPd } = this.state;
     return (
       <div className="container">
         <h1>Celebrate with us!</h1>
         <div className="image-container" style={{backgroundImage: `url(${rock})`}} />
+        <Modal onClose={this.onModalClose} isVisible={this.state.modalVisible}>
+          <p>{this.state.modalMessage}</p>
+        </Modal>
         <p>
           We will be sending out formal invitations when the date is a little closer. If you already know whether you'll be able to make it, it'd rock if you could RSVP here so we can get a rough headcount.
         </p>
@@ -78,11 +105,11 @@ class RSVP extends Component {
           <div className="row">
             <div className="twelve columns">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" className="u-full-width" value={name} onChange={this.handleChange} />
+              <input required type="text" id="name" name="name" className="u-full-width" value={name} onChange={this.handleChange} />
             </div>
             <div className="twelve columns">
               <label htmlFor="email">Email Address</label>
-              <input type="email" id="email" name="email" className="u-full-width" value={email} onChange={this.handleChange} />
+              <input required type="email" id="email" name="email" className="u-full-width" value={email} onChange={this.handleChange} />
             </div>
           </div>
           <div className="row">

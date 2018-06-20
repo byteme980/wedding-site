@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+
 import sheraton from '../images/sheraton.jpg';
 import wishlist from '../images/wishList.jpg';
 import withScrollToTop from '../components/withScrollToTop';
@@ -7,6 +9,9 @@ class Accommodations extends Component {
   render() {
     return (
       <section className="container">
+        <Helmet>
+          <title>Kim and Phil - Accommodations</title>
+        </Helmet>
         <h1>Accommodations</h1>
         <h2>Getting there</h2>
         <p>

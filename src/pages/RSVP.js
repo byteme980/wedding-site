@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+
 import rock from '../images/rock.jpg';
 import withScrollToTop from '../components/withScrollToTop';
 import Modal from '../components/Modal';
@@ -86,6 +88,9 @@ class RSVP extends Component {
     const { name, email, comments, attendance, hasRSVPd } = this.state;
     return (
       <div className="container">
+        <Helmet>
+          <title>Kim and Phil - RSVP</title>
+        </Helmet>
         <h1>Celebrate with us!</h1>
         <div className="image-container" style={{backgroundImage: `url(${rock})`}} />
         <Modal onClose={this.onModalClose} isVisible={this.state.modalVisible}>

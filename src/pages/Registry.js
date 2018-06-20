@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+
 import amazon from '../images/amazon.png';
 import withScrollToTop from '../components/withScrollToTop';
 import zola from '../images/zola.jpg';
@@ -7,6 +9,9 @@ class Registry extends Component {
   render() {
     return (
       <div className="container registry">
+        <Helmet>
+          <title>Kim and Phil - Registry</title>
+        </Helmet>
         <h1>Registry</h1>
         <p>Your presence is plenty, but if you would like to get us presents...</p>
         <section className="registry-section">

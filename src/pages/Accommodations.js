@@ -23,14 +23,15 @@ class Accommodations extends Component {
             We've reserved a block of rooms at the Sheraton Hotel.
           </p>
           <div className="image-container" style={{backgroundImage: `url(${sheraton})`}} />
-          <a href="tel:18886278523">1-888-627-8523</a>
-          <br />
-          <a href="https://www.google.com/maps/place/Sheraton+Tarrytown+Hotel/@41.0612733,-73.8395311,17z/data=!3m1!4b1!4m7!3m6!1s0x89c29532bc2f4885:0x7073cc8e66e28354!5m1!1s2018-07-08!8m2!3d41.0612733!4d-73.8373424">
-          600 White Plains Road<br/>Tarrytown, NY, 10591
-          </a>
-          <p>Please book using the link below or call them and mention the Strauch/Larie wedding to receive a discounted rate.</p>
-          {/*TODO: get booking link for hotel block */}
-          <a href="" className="link-btn">Book</a>
+          <p>
+            <a href="tel:18886278523">1-888-627-8523</a>
+            <br />
+            <a href="https://www.google.com/maps/place/Sheraton+Tarrytown+Hotel/@41.0612733,-73.8395311,17z/data=!3m1!4b1!4m7!3m6!1s0x89c29532bc2f4885:0x7073cc8e66e28354!5m1!1s2018-07-08!8m2!3d41.0612733!4d-73.8373424">
+            600 White Plains Road<br/>Tarrytown, NY, 10591
+            </a>
+          </p>
+          <p>Please book using the link below or call the hotel and mention the Strauch and Larie wedding to receive a discounted rate.</p>
+          <a href="https://www.starwoodmeeting.com/events/start.action?id=1806218581&key=28503150" className="link-btn">Book</a>
         </section>
         <section>
           <h2>Airbnbs</h2>

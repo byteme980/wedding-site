@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+
 import rock from '../images/rock.jpg';
 import withScrollToTop from '../components/withScrollToTop';
 import Modal from '../components/Modal';
@@ -86,13 +88,16 @@ class RSVP extends Component {
     const { name, email, comments, attendance, hasRSVPd } = this.state;
     return (
       <div className="container">
+        <Helmet>
+          <title>Kim and Phil - RSVP</title>
+        </Helmet>
         <h1>Celebrate with us!</h1>
         <div className="image-container" style={{backgroundImage: `url(${rock})`}} />
         <Modal onClose={this.onModalClose} isVisible={this.state.modalVisible}>
           <p>{this.state.modalMessage}</p>
         </Modal>
         <p>
-          We will be sending out formal invitations when the date is a little closer. If you already know whether you'll be able to make it, it'd rock if you could RSVP here so we can get a rough headcount.
+          Feel free to RSVP here or by snail mail.
         </p>
         { hasRSVPd && (
           <p className='rsvp-success'>Thank you for RSVPing. Please use this form again if you'd like to update your response.</p>
@@ -102,11 +107,11 @@ class RSVP extends Component {
           <div className="row">
             <div className="twelve columns">
               <label htmlFor="name">Name(s)</label>
-              <input required type="text" id="name" name="name" className="u-full-width" value={name} onChange={this.handleChange} />
+              <input required autoComplete="name" type="text" id="name" name="name" className="u-full-width" value={name} onChange={this.handleChange} />
             </div>
             <div className="twelve columns">
               <label htmlFor="email">Email Address</label>
-              <input required type="email" id="email" name="email" className="u-full-width" value={email} onChange={this.handleChange} />
+              <input required autoComplete="email" type="email" id="email" name="email" className="u-full-width" value={email} onChange={this.handleChange} />
             </div>
           </div>
           <div className="row">

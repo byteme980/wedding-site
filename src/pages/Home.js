@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import Helmet from 'react-helmet';
+
 import Gallery from '../components/Gallery';
 import kimAndPhil from '../images/kimAndPhil.jpg';
 import mountDiablo from '../images/gallery/mountDiablo.jpg';
@@ -31,6 +34,9 @@ class Home extends Component {
     ]
     return (
       <div className="container">
+        <Helmet>
+          <title>Kim and Phil - 9/22/2018</title>
+        </Helmet>
         <div>
           <h1 className="main-heading">Kim & Phil</h1>
           <div className="main-subheading">September 22, 2018</div>

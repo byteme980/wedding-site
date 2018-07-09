@@ -16,7 +16,7 @@ class Wedding extends Component {
         <div className="image-container" style={{backgroundImage: `url(${tappanHill})`}} />
         <section>
           <h2>Tappan Hill Mansion</h2>
-          <p>200 Gundpowder Lane. Tarrytown, NY</p>
+          <p>200 Gunpowder Lane. Tarrytown, NY</p>
           <p>Arrive by 5pm</p>
           <p>Ceremony will begin promptly at 5:30pm</p>
           <p>Cocktail hour and reception to follow</p>

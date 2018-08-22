@@ -15,7 +15,7 @@ class Accommodations extends Component {
         <h1>Accommodations</h1>
         <h2>Getting there</h2>
         <p>
-          If you're coming from out of town, we recommend flying into John F. Kennedy International Airport (JFK), but Laguardia (LGA), Newark (NWK), and Westchester County Airport (HPN) are also nearby. We recommend flying in on Friday and leaving sometime on Sunday to get the most out of your visit!
+          If you are coming from out of town, we recommend flying into John F. Kennedy International Airport (JFK), but Laguardia (LGA), Newark (NWK), and Westchester County Airport (HPN) are also nearby. We recommend flying in on Friday and leaving sometime on Sunday to get the most out of your visit!
         </p>
         <section>
           <h2>Hotels</h2>
